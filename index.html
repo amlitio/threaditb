@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flask App</title>
+</head>
+<body>
+<h1>Flask App</h1>
+<p>This app extracts the article text from a given URL and summarizes it into key points.</p>
+<p>To use this app, enter the URL of the article you want to summarize in the form below.</p>
+<form action="/" method="post">
+    <input type="text" name="article_url" placeholder="Enter the URL of the article">
+    <input type="submit">
+</form>
+<p>The summarized points will be displayed below.</p>
+
+<h2>Summarized Points:</h2>
+<p>{% for point in points %}{{ point }}{% endfor %}</p>
+
+</body>
+</html>
